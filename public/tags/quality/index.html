@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quality · QuACS</title>
@@ -25,6 +25,10 @@
         
       </ul>
     </nav>
+    <div class="mobile-search">
+  <input class="search-box" id="search-input-mobile" type="text" placeholder="search..." />
+  <div id="search-results-mobile"></div>
+</div>
   </header>
 
   <div class="body-wrap">
@@ -51,7 +55,7 @@
 <div class="article-list">
   
   <a href="/articles/processes-and-procedures/shift-left-left/" class="article-item">
-    <div class="article-meta">2026-04-18 &nbsp;·&nbsp; articles/processes-and-procedures/</div>
+    <div class="article-meta">2026-04-10 &nbsp;·&nbsp; articles/processes-and-procedures/</div>
     <div class="article-title">Shift-left-left: quality starts when you walk through the door</div>
     <div class="article-desc">Shift left is about moving quality earlier in the development cycle. Shift-left-left is about moving it earlier than that — into the culture, the conversations, and the mindset people bring to work every morning.</div>
     <div class="article-tags">
@@ -83,6 +87,26 @@
         minMatchCharLength: 2
       });
     });
+
+  function handleSearch(query, resultsEl) {
+    if (!query || !fuse) { resultsEl.innerHTML = ""; return; }
+    const results = fuse.search(query).slice(0, 8);
+    resultsEl.innerHTML = results.map(r => `
+      <a href="${r.item.url}" class="search-result-item">
+        <div class="search-result-title">${r.item.title}</div>
+        <div class="search-result-meta">${r.item.section}</div>
+      </a>
+    `).join("");
+  }
+
+  document.getElementById("search-input").addEventListener("input", function () {
+    handleSearch(this.value.trim(), document.getElementById("search-results"));
+  });
+
+  document.getElementById("search-input-mobile").addEventListener("input", function () {
+    handleSearch(this.value.trim(), document.getElementById("search-results-mobile"));
+  });
+</script>
 
   document.getElementById("search-input").addEventListener("input", function () {
     const query = this.value.trim();

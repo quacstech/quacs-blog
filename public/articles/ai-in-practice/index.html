@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ai in Practice · QuACS</title>
@@ -25,6 +25,10 @@
         
       </ul>
     </nav>
+    <div class="mobile-search">
+  <input class="search-box" id="search-input-mobile" type="text" placeholder="search..." />
+  <div id="search-results-mobile"></div>
+</div>
   </header>
 
   <div class="body-wrap">
@@ -51,19 +55,6 @@
 
 <div class="article-list">
   
-<a href="/articles/ai-in-practice/mvp-90-minutes-lovable-claude/" class="article-item">
-    <div class="article-meta">2026-04-18 &nbsp;·&nbsp; Ai in Practice</div>
-    <div class="article-title">Working MVP in 90 minutes — Lovable, Anthropic API, and knowing what you want to build</div>
-    
-    <div class="article-desc">How I went from idea to working MVP in a single evening — and why the 90 minutes was the easy part.</div>
-    
-    
-    <div class="article-tags">
-      <a href="/tags/ai-in-practice" class="tag">ai in practice</a><a href="/tags/lovable" class="tag">lovable</a><a href="/tags/claude" class="tag">claude</a><a href="/tags/mvp" class="tag">mvp</a><a href="/tags/case-study" class="tag">case study</a>
-    </div>
-    
-  </a>
-  
 <a href="/articles/ai-in-practice/data-migration-pipeline-part1/" class="article-item">
     <div class="article-meta">2026-04-18 &nbsp;·&nbsp; Ai in Practice</div>
     <div class="article-title">Testing a data migration nobody should notice: part 1 — the problem</div>
@@ -73,6 +64,19 @@
     
     <div class="article-tags">
       <a href="/tags/python" class="tag">python</a><a href="/tags/api" class="tag">api</a><a href="/tags/data-migration" class="tag">data migration</a><a href="/tags/testing" class="tag">testing</a><a href="/tags/qa" class="tag">qa</a><a href="/tags/ai-in-practice" class="tag">ai in practice</a><a href="/tags/case-study" class="tag">case study</a>
+    </div>
+    
+  </a>
+  
+<a href="/articles/ai-in-practice/mvp-90-minutes-lovable-claude/" class="article-item">
+    <div class="article-meta">2026-04-17 &nbsp;·&nbsp; Ai in Practice</div>
+    <div class="article-title">Working MVP in 90 minutes — Lovable, Anthropic API, and knowing what you want to build</div>
+    
+    <div class="article-desc">How I went from idea to working MVP in a single evening — and why the 90 minutes was the easy part.</div>
+    
+    
+    <div class="article-tags">
+      <a href="/tags/ai-in-practice" class="tag">ai in practice</a><a href="/tags/lovable" class="tag">lovable</a><a href="/tags/claude" class="tag">claude</a><a href="/tags/mvp" class="tag">mvp</a><a href="/tags/case-study" class="tag">case study</a>
     </div>
     
   </a>
@@ -101,6 +105,26 @@
         minMatchCharLength: 2
       });
     });
+
+  function handleSearch(query, resultsEl) {
+    if (!query || !fuse) { resultsEl.innerHTML = ""; return; }
+    const results = fuse.search(query).slice(0, 8);
+    resultsEl.innerHTML = results.map(r => `
+      <a href="${r.item.url}" class="search-result-item">
+        <div class="search-result-title">${r.item.title}</div>
+        <div class="search-result-meta">${r.item.section}</div>
+      </a>
+    `).join("");
+  }
+
+  document.getElementById("search-input").addEventListener("input", function () {
+    handleSearch(this.value.trim(), document.getElementById("search-results"));
+  });
+
+  document.getElementById("search-input-mobile").addEventListener("input", function () {
+    handleSearch(this.value.trim(), document.getElementById("search-results-mobile"));
+  });
+</script>
 
   document.getElementById("search-input").addEventListener("input", function () {
     const query = this.value.trim();

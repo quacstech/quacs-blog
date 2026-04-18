@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Learning on QuACS</title>
-    <link>https://quacs.tech/tags/learning/</link>
+    <link>http://localhost:1313/tags/learning/</link>
     <description>Recent content in Learning on QuACS</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://quacs.tech/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The course industrial complex</title>
-      <link>https://quacs.tech/articles/thoughts/course-industrial-complex/</link>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/articles/thoughts/course-industrial-complex/</guid>
+      <link>http://localhost:1313/articles/thoughts/course-industrial-complex/</link>
+      <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/thoughts/course-industrial-complex/</guid>
       <description>&lt;p&gt;Around 2019, if you spent any time on social media, you could not avoid them. Boot camps, coding tutorials, ebooks with titles like &amp;ldquo;From Zero to Developer in 12 Weeks,&amp;rdquo; video courses promising a career change by the end of the month. They were everywhere — in ads, in newsletters, in the bios of people who had learned to code six months earlier and were now teaching others to do the same.&lt;/p&gt;</description>
     </item>
   </channel>

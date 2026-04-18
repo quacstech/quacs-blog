@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Postman, Newman, and a little bash to make it useful · QuACS</title>
@@ -25,6 +25,10 @@
         
       </ul>
     </nav>
+    <div class="mobile-search">
+  <input class="search-box" id="search-input-mobile" type="text" placeholder="search..." />
+  <div id="search-results-mobile"></div>
+</div>
   </header>
 
   <div class="body-wrap">
@@ -48,7 +52,7 @@
     <main>
       
 <article>
-  <div class="article-meta">2025-09-18 &nbsp;·&nbsp; articles/quality-assurance/</div>
+  <div class="article-meta">2026-03-12 &nbsp;·&nbsp; articles/quality-assurance/</div>
   <h1 class="article-title">Postman, Newman, and a little bash to make it useful</h1>
   
   <p class="article-desc">How to run Postman collections from the command line with Newman and wrap the output in a bash script that actually tells you what went wrong.</p>
@@ -157,6 +161,26 @@
         minMatchCharLength: 2
       });
     });
+
+  function handleSearch(query, resultsEl) {
+    if (!query || !fuse) { resultsEl.innerHTML = ""; return; }
+    const results = fuse.search(query).slice(0, 8);
+    resultsEl.innerHTML = results.map(r => `
+      <a href="${r.item.url}" class="search-result-item">
+        <div class="search-result-title">${r.item.title}</div>
+        <div class="search-result-meta">${r.item.section}</div>
+      </a>
+    `).join("");
+  }
+
+  document.getElementById("search-input").addEventListener("input", function () {
+    handleSearch(this.value.trim(), document.getElementById("search-results"));
+  });
+
+  document.getElementById("search-input-mobile").addEventListener("input", function () {
+    handleSearch(this.value.trim(), document.getElementById("search-results-mobile"));
+  });
+</script>
 
   document.getElementById("search-input").addEventListener("input", function () {
     const query = this.value.trim();

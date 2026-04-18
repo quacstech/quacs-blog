@@ -2,192 +2,192 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on QuACS</title>
-    <link>https://quacs.tech/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on QuACS</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 18 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://quacs.tech/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Agile</title>
-      <link>https://quacs.tech/tags/agile/</link>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/agile/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ai</title>
-      <link>https://quacs.tech/tags/ai/</link>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/ai/</guid>
-      <description></description>
-    </item>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ai in Practice</title>
-      <link>https://quacs.tech/tags/ai-in-practice/</link>
+      <link>http://localhost:1313/tags/ai-in-practice/</link>
       <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/ai-in-practice/</guid>
+      <guid>http://localhost:1313/tags/ai-in-practice/</guid>
       <description></description>
     </item>
     <item>
       <title>Api</title>
-      <link>https://quacs.tech/tags/api/</link>
+      <link>http://localhost:1313/tags/api/</link>
       <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/api/</guid>
+      <guid>http://localhost:1313/tags/api/</guid>
       <description></description>
     </item>
     <item>
       <title>Case Study</title>
-      <link>https://quacs.tech/tags/case-study/</link>
+      <link>http://localhost:1313/tags/case-study/</link>
       <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/case-study/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Claude</title>
-      <link>https://quacs.tech/tags/claude/</link>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/claude/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Culture</title>
-      <link>https://quacs.tech/tags/culture/</link>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/culture/</guid>
+      <guid>http://localhost:1313/tags/case-study/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Migration</title>
-      <link>https://quacs.tech/tags/data-migration/</link>
+      <link>http://localhost:1313/tags/data-migration/</link>
       <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/data-migration/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Industry</title>
-      <link>https://quacs.tech/tags/industry/</link>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/industry/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Learning</title>
-      <link>https://quacs.tech/tags/learning/</link>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/learning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Lovable</title>
-      <link>https://quacs.tech/tags/lovable/</link>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/lovable/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Management</title>
-      <link>https://quacs.tech/tags/management/</link>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/management/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mvp</title>
-      <link>https://quacs.tech/tags/mvp/</link>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/mvp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Processes</title>
-      <link>https://quacs.tech/tags/processes/</link>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/processes/</guid>
+      <guid>http://localhost:1313/tags/data-migration/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>https://quacs.tech/tags/python/</link>
+      <link>http://localhost:1313/tags/python/</link>
       <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/python/</guid>
+      <guid>http://localhost:1313/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Qa</title>
-      <link>https://quacs.tech/tags/qa/</link>
+      <link>http://localhost:1313/tags/qa/</link>
       <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/qa/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Quality</title>
-      <link>https://quacs.tech/tags/quality/</link>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/quality/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Retrospective</title>
-      <link>https://quacs.tech/tags/retrospective/</link>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/retrospective/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Scrum</title>
-      <link>https://quacs.tech/tags/scrum/</link>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/scrum/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Shift Left</title>
-      <link>https://quacs.tech/tags/shift-left/</link>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/shift-left/</guid>
+      <guid>http://localhost:1313/tags/qa/</guid>
       <description></description>
     </item>
     <item>
       <title>Testing</title>
-      <link>https://quacs.tech/tags/testing/</link>
+      <link>http://localhost:1313/tags/testing/</link>
       <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/testing/</guid>
+      <guid>http://localhost:1313/tags/testing/</guid>
       <description></description>
     </item>
     <item>
-      <title>Thoughts</title>
-      <link>https://quacs.tech/tags/thoughts/</link>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/thoughts/</guid>
+      <title>Claude</title>
+      <link>http://localhost:1313/tags/claude/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/claude/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lovable</title>
+      <link>http://localhost:1313/tags/lovable/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/lovable/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mvp</title>
+      <link>http://localhost:1313/tags/mvp/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mvp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Culture</title>
+      <link>http://localhost:1313/tags/culture/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/culture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Processes</title>
+      <link>http://localhost:1313/tags/processes/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/processes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quality</title>
+      <link>http://localhost:1313/tags/quality/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/quality/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shift Left</title>
+      <link>http://localhost:1313/tags/shift-left/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/shift-left/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agile</title>
+      <link>http://localhost:1313/tags/agile/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/agile/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Retrospective</title>
+      <link>http://localhost:1313/tags/retrospective/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/retrospective/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scrum</title>
+      <link>http://localhost:1313/tags/scrum/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/scrum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Management</title>
+      <link>http://localhost:1313/tags/management/</link>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/management/</guid>
       <description></description>
     </item>
     <item>
       <title>Api Testing</title>
-      <link>https://quacs.tech/tags/api-testing/</link>
-      <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/api-testing/</guid>
+      <link>http://localhost:1313/tags/api-testing/</link>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/api-testing/</guid>
       <description></description>
     </item>
     <item>
       <title>Bash</title>
-      <link>https://quacs.tech/tags/bash/</link>
-      <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/bash/</guid>
+      <link>http://localhost:1313/tags/bash/</link>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bash/</guid>
       <description></description>
     </item>
     <item>
       <title>Newman</title>
-      <link>https://quacs.tech/tags/newman/</link>
-      <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/newman/</guid>
+      <link>http://localhost:1313/tags/newman/</link>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/newman/</guid>
       <description></description>
     </item>
     <item>
       <title>Postman</title>
-      <link>https://quacs.tech/tags/postman/</link>
-      <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://quacs.tech/tags/postman/</guid>
+      <link>http://localhost:1313/tags/postman/</link>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/postman/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ai</title>
+      <link>http://localhost:1313/tags/ai/</link>
+      <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Industry</title>
+      <link>http://localhost:1313/tags/industry/</link>
+      <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/industry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Learning</title>
+      <link>http://localhost:1313/tags/learning/</link>
+      <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Thoughts</title>
+      <link>http://localhost:1313/tags/thoughts/</link>
+      <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/thoughts/</guid>
       <description></description>
     </item>
   </channel>

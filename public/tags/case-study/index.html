@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Case Study · QuACS</title>
@@ -25,6 +25,10 @@
         
       </ul>
     </nav>
+    <div class="mobile-search">
+  <input class="search-box" id="search-input-mobile" type="text" placeholder="search..." />
+  <div id="search-results-mobile"></div>
+</div>
   </header>
 
   <div class="body-wrap">
@@ -50,33 +54,6 @@
 <div class="section-title">tag: Case Study — 5 articles</div>
 <div class="article-list">
   
-  <a href="/articles/ai-in-practice/mvp-90-minutes-lovable-claude/" class="article-item">
-    <div class="article-meta">2026-04-18 &nbsp;·&nbsp; articles/ai-in-practice/</div>
-    <div class="article-title">Working MVP in 90 minutes — Lovable, Anthropic API, and knowing what you want to build</div>
-    <div class="article-desc">How I went from idea to working MVP in a single evening — and why the 90 minutes was the easy part.</div>
-    <div class="article-tags">
-      <span class="tag">ai in practice</span><span class="tag">lovable</span><span class="tag">claude</span><span class="tag">mvp</span><span class="tag">case study</span>
-    </div>
-  </a>
-  
-  <a href="/articles/processes-and-procedures/scrum-retro/" class="article-item">
-    <div class="article-meta">2026-04-18 &nbsp;·&nbsp; articles/processes-and-procedures/</div>
-    <div class="article-title">We do Scrum. We have dailies.</div>
-    <div class="article-desc">A case study in teams that adopted Scrum by scheduling meetings — and quietly dropped the one that actually makes it work.</div>
-    <div class="article-tags">
-      <span class="tag">scrum</span><span class="tag">agile</span><span class="tag">retrospective</span><span class="tag">processes</span><span class="tag">case study</span>
-    </div>
-  </a>
-  
-  <a href="/articles/processes-and-procedures/agile-success-management/" class="article-item">
-    <div class="article-meta">2026-04-18 &nbsp;·&nbsp; articles/processes-and-procedures/</div>
-    <div class="article-title">The Scrum adoption that actually worked — and why</div>
-    <div class="article-desc">A case study in successful agile adoption — where the turning point was not the team understanding Scrum, but management finally leaving them alone for two weeks.</div>
-    <div class="article-tags">
-      <span class="tag">scrum</span><span class="tag">agile</span><span class="tag">processes</span><span class="tag">case study</span><span class="tag">management</span>
-    </div>
-  </a>
-  
   <a href="/articles/ai-in-practice/data-migration-pipeline-part1/" class="article-item">
     <div class="article-meta">2026-04-18 &nbsp;·&nbsp; articles/ai-in-practice/</div>
     <div class="article-title">Testing a data migration nobody should notice: part 1 — the problem</div>
@@ -86,12 +63,39 @@
     </div>
   </a>
   
+  <a href="/articles/ai-in-practice/mvp-90-minutes-lovable-claude/" class="article-item">
+    <div class="article-meta">2026-04-17 &nbsp;·&nbsp; articles/ai-in-practice/</div>
+    <div class="article-title">Working MVP in 90 minutes — Lovable, Anthropic API, and knowing what you want to build</div>
+    <div class="article-desc">How I went from idea to working MVP in a single evening — and why the 90 minutes was the easy part.</div>
+    <div class="article-tags">
+      <span class="tag">ai in practice</span><span class="tag">lovable</span><span class="tag">claude</span><span class="tag">mvp</span><span class="tag">case study</span>
+    </div>
+  </a>
+  
   <a href="/articles/processes-and-procedures/shift-left-left/" class="article-item">
-    <div class="article-meta">2026-04-18 &nbsp;·&nbsp; articles/processes-and-procedures/</div>
+    <div class="article-meta">2026-04-10 &nbsp;·&nbsp; articles/processes-and-procedures/</div>
     <div class="article-title">Shift-left-left: quality starts when you walk through the door</div>
     <div class="article-desc">Shift left is about moving quality earlier in the development cycle. Shift-left-left is about moving it earlier than that — into the culture, the conversations, and the mindset people bring to work every morning.</div>
     <div class="article-tags">
       <span class="tag">shift left</span><span class="tag">quality</span><span class="tag">culture</span><span class="tag">processes</span><span class="tag">case study</span>
+    </div>
+  </a>
+  
+  <a href="/articles/processes-and-procedures/scrum-retro/" class="article-item">
+    <div class="article-meta">2026-03-24 &nbsp;·&nbsp; articles/processes-and-procedures/</div>
+    <div class="article-title">We do Scrum. We have dailies.</div>
+    <div class="article-desc">A case study in teams that adopted Scrum by scheduling meetings — and quietly dropped the one that actually makes it work.</div>
+    <div class="article-tags">
+      <span class="tag">scrum</span><span class="tag">agile</span><span class="tag">retrospective</span><span class="tag">processes</span><span class="tag">case study</span>
+    </div>
+  </a>
+  
+  <a href="/articles/processes-and-procedures/agile-success-management/" class="article-item">
+    <div class="article-meta">2026-03-20 &nbsp;·&nbsp; articles/processes-and-procedures/</div>
+    <div class="article-title">The Scrum adoption that actually worked — and why</div>
+    <div class="article-desc">A case study in successful agile adoption — where the turning point was not the team understanding Scrum, but management finally leaving them alone for two weeks.</div>
+    <div class="article-tags">
+      <span class="tag">scrum</span><span class="tag">agile</span><span class="tag">processes</span><span class="tag">case study</span><span class="tag">management</span>
     </div>
   </a>
   
@@ -119,6 +123,26 @@
         minMatchCharLength: 2
       });
     });
+
+  function handleSearch(query, resultsEl) {
+    if (!query || !fuse) { resultsEl.innerHTML = ""; return; }
+    const results = fuse.search(query).slice(0, 8);
+    resultsEl.innerHTML = results.map(r => `
+      <a href="${r.item.url}" class="search-result-item">
+        <div class="search-result-title">${r.item.title}</div>
+        <div class="search-result-meta">${r.item.section}</div>
+      </a>
+    `).join("");
+  }
+
+  document.getElementById("search-input").addEventListener("input", function () {
+    handleSearch(this.value.trim(), document.getElementById("search-results"));
+  });
+
+  document.getElementById("search-input-mobile").addEventListener("input", function () {
+    handleSearch(this.value.trim(), document.getElementById("search-results-mobile"));
+  });
+</script>
 
   document.getElementById("search-input").addEventListener("input", function () {
     const query = this.value.trim();

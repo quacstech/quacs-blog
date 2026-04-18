@@ -2,124 +2,124 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://quacs.tech/articles/</loc>
+    <loc>http://localhost:1313/articles/</loc>
     <lastmod>2026-04-18T12:57:49+02:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2026-04-18T12:57:49+02:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/articles/ai-in-practice/</loc>
+    <loc>http://localhost:1313/articles/ai-in-practice/</loc>
     <lastmod>2026-04-18T12:54:57+02:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/articles/processes-and-procedures/</loc>
+    <loc>http://localhost:1313/articles/processes-and-procedures/</loc>
     <lastmod>2026-04-18T12:54:57+02:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/articles/quality-assurance/</loc>
+    <loc>http://localhost:1313/articles/quality-assurance/</loc>
     <lastmod>2026-04-18T12:54:57+02:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/articles/thoughts/</loc>
+    <loc>http://localhost:1313/articles/thoughts/</loc>
     <lastmod>2026-04-18T12:54:57+02:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/agile/</loc>
+    <loc>http://localhost:1313/tags/ai-in-practice/</loc>
     <lastmod>2026-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/ai/</loc>
+    <loc>http://localhost:1313/tags/api/</loc>
     <lastmod>2026-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/ai-in-practice/</loc>
+    <loc>http://localhost:1313/tags/case-study/</loc>
     <lastmod>2026-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/api/</loc>
+    <loc>http://localhost:1313/tags/data-migration/</loc>
     <lastmod>2026-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/case-study/</loc>
+    <loc>http://localhost:1313/tags/python/</loc>
     <lastmod>2026-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/claude/</loc>
+    <loc>http://localhost:1313/tags/qa/</loc>
     <lastmod>2026-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/culture/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/data-migration/</loc>
+    <loc>http://localhost:1313/tags/testing/</loc>
     <lastmod>2026-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/industry/</loc>
+    <loc>http://localhost:1313/articles/ai-in-practice/data-migration-pipeline-part1/</loc>
     <lastmod>2026-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/learning/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/claude/</loc>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/lovable/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/lovable/</loc>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/management/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/mvp/</loc>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/mvp/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/articles/ai-in-practice/mvp-90-minutes-lovable-claude/</loc>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/processes/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/culture/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/python/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/processes/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/qa/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/quality/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/quality/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/shift-left/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/retrospective/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/articles/processes-and-procedures/shift-left-left/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/scrum/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/agile/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/shift-left/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/retrospective/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/articles/processes-and-procedures/shift-left-left/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/scrum/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/articles/processes-and-procedures/scrum-retro/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/testing/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/management/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/articles/ai-in-practice/data-migration-pipeline-part1/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/articles/processes-and-procedures/agile-success-management/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/articles/thoughts/course-industrial-complex/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/api-testing/</loc>
+    <lastmod>2026-03-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/articles/processes-and-procedures/agile-success-management/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/bash/</loc>
+    <lastmod>2026-03-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/thoughts/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/newman/</loc>
+    <lastmod>2026-03-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/articles/processes-and-procedures/scrum-retro/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/postman/</loc>
+    <lastmod>2026-03-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/articles/ai-in-practice/mvp-90-minutes-lovable-claude/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/articles/quality-assurance/postman-newman-bash-reporting/</loc>
+    <lastmod>2026-03-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/api-testing/</loc>
-    <lastmod>2025-09-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/ai/</loc>
+    <lastmod>2025-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/bash/</loc>
-    <lastmod>2025-09-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/industry/</loc>
+    <lastmod>2025-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/newman/</loc>
-    <lastmod>2025-09-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/learning/</loc>
+    <lastmod>2025-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/tags/postman/</loc>
-    <lastmod>2025-09-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/articles/thoughts/course-industrial-complex/</loc>
+    <lastmod>2025-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://quacs.tech/articles/quality-assurance/postman-newman-bash-reporting/</loc>
-    <lastmod>2025-09-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/thoughts/</loc>
+    <lastmod>2025-03-02T00:00:00+00:00</lastmod>
   </url>
 </urlset>
