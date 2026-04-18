@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mvp on QuACS</title>
+    <link>https://quacs.tech/tags/mvp/</link>
+    <description>Recent content in Mvp on QuACS</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://quacs.tech/tags/mvp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Working MVP in 90 minutes — Lovable, Anthropic API, and knowing what you want to build</title>
+      <link>https://quacs.tech/articles/ai-in-practice/mvp-90-minutes-lovable-claude/</link>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://quacs.tech/articles/ai-in-practice/mvp-90-minutes-lovable-claude/</guid>
+      <description>&lt;p&gt;There is a version of this story that is about speed. Ninety minutes, working app, Claude API, impressive. That version is true but it is not the interesting part.&lt;/p&gt;&#xA;&lt;p&gt;The interesting part is what happened before I opened Lovable.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-the-app-does&#34;&gt;What the app does&lt;/h2&gt;&#xA;&lt;p&gt;The app analyses CVs against job listings. You paste in a PDF of your CV, paste a link to a job listing, and it does four things: extracts the requirements, company name, salary range and URL from the listing; analyses how well your CV matches; scores the match from 0 to 100; and asks you on a scale of 1 to 10 how much you want to tailor your CV for this role.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

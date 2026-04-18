@@ -1,0 +1,52 @@
+baseURL = "https://quacs.tech"
+languageCode = "en-us"
+title = "QuACS"
+
+[params]
+  description = "Writing about QA, processes, and the changing nature of professional work."
+  headline = "Hands-on notes from 15 years in quality engineering."
+
+[[menus.main]]
+  name = "home"
+  url = "/"
+  weight = 1
+
+[[menus.main]]
+  name = "articles"
+  url = "/articles/"
+  weight = 2
+
+[[menus.main]]
+  name = "about"
+  url = "/about/"
+  weight = 3
+
+[[menus.sidebar]]
+  name = "quality assurance"
+  url = "/articles/quality-assurance/"
+  weight = 1
+
+[[menus.sidebar]]
+  name = "processes & procedures"
+  url = "/articles/processes-and-procedures/"
+  weight = 2
+
+[[menus.sidebar]]
+  name = "thoughts"
+  url = "/articles/thoughts/"
+  weight = 3
+
+[[menus.sidebar]]
+  name = "ai in practice"
+  url = "/articles/ai-in-practice/"
+  weight = 4
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+[markup.highlight]
+    noClasses = false
+    style = "monokailight"
+
+[taxonomies]
+  tag = "tags"

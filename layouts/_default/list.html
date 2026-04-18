@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="section-title">{{ .Title }} — {{ len .Pages }} articles</div>
+
+<div class="article-list">
+  {{ range .Pages.ByDate.Reverse }}
+<a href="{{ .RelPermalink }}" class="article-item">
+    <div class="article-meta">{{ .Date.Format "2006-01-02" }} &nbsp;·&nbsp; {{ .CurrentSection.Title }}</div>
+    <div class="article-title">{{ .Title }}</div>
+    {{ with .Params.description }}
+    <div class="article-desc">{{ . }}</div>
+    {{ end }}
+    {{ with .Params.tags }}
+    <div class="article-tags">
+      {{ range . }}<a href="/tags/{{ . | urlize }}" class="tag">{{ . }}</a>{{ end }}
+    </div>
+    {{ end }}
+  </a>
+  {{ end }}
+</div>
+{{ end }}

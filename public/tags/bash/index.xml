@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bash on QuACS</title>
+    <link>https://quacs.tech/tags/bash/</link>
+    <description>Recent content in Bash on QuACS</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://quacs.tech/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Postman, Newman, and a little bash to make it useful</title>
+      <link>https://quacs.tech/articles/quality-assurance/postman-newman-bash-reporting/</link>
+      <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://quacs.tech/articles/quality-assurance/postman-newman-bash-reporting/</guid>
+      <description>&lt;p&gt;Most teams write Postman collections, run them manually, and call it a day. This is about taking that collection out of the GUI and into a pipeline — with a bash wrapper that makes the output readable for everyone, not just the person who ran it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-problem-with-just-running-newman&#34;&gt;The problem with just running Newman&lt;/h2&gt;&#xA;&lt;p&gt;Newman works out of the box. You install it, point it at a collection, it runs. But the default output is noisy, exits with a non-zero code on failure without telling you much, and gives you nothing useful to share or log.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,41 @@
+{{ define "main" }}
+<div class="home-headline">
+  <h1>{{ .Site.Params.headline }}</h1>
+  <p>{{ .Site.Params.description }}</p>
+</div>
+
+{{ $pinned := where .Site.RegularPages "Params.pinned" true }}
+{{ if $pinned }}
+<div class="section-title">pinned</div>
+<div class="article-list">
+  {{ range $pinned }}
+  <a href="{{ .RelPermalink }}" class="article-item">
+    <div class="article-meta">{{ .Date.Format "2006-01-02" }} &nbsp;·&nbsp; {{ .File.Dir }}</div>
+    <div class="article-title">{{ .Title }}</div>
+    {{ with .Params.description }}<div class="article-desc">{{ . }}</div>{{ end }}
+    {{ with .Params.tags }}
+    <div class="article-tags">
+      {{ range . }}<a href="/tags/{{ . | urlize }}" class="tag">{{ . }}</a>{{ end }}
+    </div>
+    {{ end }}
+  </a>
+  {{ end }}
+</div>
+{{ end }}
+
+<div class="section-title" style="margin-top: 32px;">recent</div>
+<div class="article-list">
+  {{ range first 10 ((where .Site.RegularPages "Params.pinned" "ne" true).ByDate.Reverse) }}
+  <a href="{{ .RelPermalink }}" class="article-item">
+    <div class="article-meta">{{ .Date.Format "2006-01-02" }} &nbsp;·&nbsp; {{ .File.Dir }}</div>
+    <div class="article-title">{{ .Title }}</div>
+    {{ with .Params.description }}<div class="article-desc">{{ . }}</div>{{ end }}
+    {{ with .Params.tags }}
+    <div class="article-tags">
+      {{ range . }}<a href="/tags/{{ . | urlize }}" class="tag">{{ . }}</a>{{ end }}
+    </div>
+    {{ end }}
+  </a>
+  {{ end }}
+</div>
+{{ end }}

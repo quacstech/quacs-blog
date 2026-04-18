@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The course industrial complex · QuACS</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="alternate" type="application/rss+xml" title="QuACS" href="/index.xml">
+</head>
+<body>
+
+  <header>
+    <div class="site-title">
+     <img src="/images/duck.svg" alt="QuACS duck" class="site-logo">
+      QuACS<span>.tech</span>
+    </div>
+    <nav>
+      <ul class="top-nav">
+        
+        <li><a href="/" >home</a></li>
+        
+        <li><a href="/articles/" >articles</a></li>
+        
+        <li><a href="/about/" >about</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <div class="body-wrap">
+    <aside class="sidebar">
+      <div class="sidebar-label">topics</div>
+      <ul class="sidebar-nav">
+        
+        <li><a href="/articles/quality-assurance/" >quality assurance</a></li>
+        
+        <li><a href="/articles/processes-and-procedures/" >processes &amp; procedures</a></li>
+        
+        <li><a href="/articles/thoughts/" class="active">thoughts</a></li>
+        
+        <li><a href="/articles/ai-in-practice/" >ai in practice</a></li>
+        
+      </ul>
+      <input class="search-box" id="search-input" type="text" placeholder="search..." />
+      <div id="search-results"></div>
+    </aside>
+
+    <main>
+      
+<article>
+  <div class="article-meta">2026-04-18 &nbsp;·&nbsp; articles/thoughts/</div>
+  <h1 class="article-title">The course industrial complex</h1>
+  
+  <p class="article-desc">Every technology wave brings the same thing slightly faster than the technology itself: a course about it. An observation on momentum, monetisation, and what actually makes someone good at their job.</p>
+  
+  <hr>
+  
+<div class="article-tags" style="margin-bottom: 24px;">
+  <a href="/tags/thoughts" class="tag">thoughts</a><a href="/tags/ai" class="tag">ai</a><a href="/tags/learning" class="tag">learning</a><a href="/tags/industry" class="tag">industry</a>
+</div>
+
+  <div class="article-body">
+    <p>Around 2019, if you spent any time on social media, you could not avoid them. Boot camps, coding tutorials, ebooks with titles like &ldquo;From Zero to Developer in 12 Weeks,&rdquo; video courses promising a career change by the end of the month. They were everywhere — in ads, in newsletters, in the bios of people who had learned to code six months earlier and were now teaching others to do the same.</p>
+<p>The timing made sense. Software development was visibly lucrative, remote work was normalising, and the barrier to creating and selling a course had dropped to almost nothing. A camera, a screen recorder, a Gumroad account. The market responded accordingly.</p>
+<p>To be fair — and this matters — some of those courses were genuinely good. A well-structured learning path for someone starting from zero has real value. It saves time, reduces confusion, gives direction. The problem was not that the courses existed. The problem was the volume, and what the volume implied about the primary motivation behind most of them. Passive income dressed as education. Momentum monetised.</p>
+<p>Now it is AI. Agentic coding, AI automation engineering, prompt engineering masterclasses, how to &ldquo;utilise the tools and maximise your potential.&rdquo; The vocabulary has changed. The structure is identical.</p>
+<p>Again — some of it is useful. The tools are real, the skills transferable, the enthusiasm occasionally genuine. But the number of courses, the speed at which they appear, the confidence with which people who discovered something three months ago are now certifying others in it — it creates noise at a scale that is genuinely confusing for the people these courses claim to serve most: beginners.</p>
+<p>And that is the part worth sitting with. The primary market for all of this is people who are new. People who do not yet know enough to evaluate what they are buying. People who are told that the right course, the right roadmap, the right cohort will get them there — wherever &ldquo;there&rdquo; is — faster and more reliably than figuring it out themselves.</p>
+<p>What actually gets you there is less marketable. It is sitting down and building something until it does not work, then figuring out why. It is writing code that is bad, knowing it is bad, and writing better code next time. It is days that feel unproductive and weeks that suddenly make sense. It is months of that before you are competent, and years of real projects — with real constraints, real teams, real consequences — before you are genuinely good.</p>
+<p>No course teaches that, because no course can. The hours are non-transferable.</p>
+<p>None of this is a reason to avoid learning resources — books, documentation, tutorials, even courses. They have a place. But they are a starting point, not a destination, and the industry that has grown up around selling them has a structural incentive to obscure that distinction.</p>
+<p>The wave will pass. The AI course market will saturate the same way the coding boot camp market did, and the people who built things rather than bought certificates will be the ones who remained standing. They always are.</p>
+
+  </div>
+</article>
+
+    </main>
+  </div>
+
+  <footer>
+    <span>plain html · no tracking · no cookies</span>
+    <a href="/index.xml">rss feed</a>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+<script>
+  let fuse;
+  fetch("/index.json")
+    .then(r => r.json())
+    .then(data => {
+      const unique = Array.from(
+        new Map(data.map(item => [item.url, item])).values()
+      );
+      fuse = new Fuse(unique, {
+        keys: ["title", "description", "content"],
+        threshold: 0.4,
+        minMatchCharLength: 2
+      });
+    });
+
+  document.getElementById("search-input").addEventListener("input", function () {
+    const query = this.value.trim();
+    const box = document.getElementById("search-results");
+    if (!query || !fuse) { box.innerHTML = ""; return; }
+    const results = fuse.search(query).slice(0, 8);
+    box.innerHTML = results.map(r => `
+      <a href="${r.item.url}" class="search-result-item">
+        <div class="search-result-title">${r.item.title}</div>
+        <div class="search-result-meta">${r.item.section}</div>
+      </a>
+    `).join("");
+  });
+</script>
+<script>
+  document.querySelectorAll('pre').forEach(pre => {
+    const btn = document.createElement('button');
+    btn.className = 'copy-btn';
+    btn.textContent = 'copy';
+    pre.style.position = 'relative';
+    pre.appendChild(btn);
+    btn.addEventListener('click', () => {
+      const code = pre.querySelector('code');
+      navigator.clipboard.writeText(code ? code.textContent : pre.textContent);
+      btn.textContent = 'copied';
+      setTimeout(() => btn.textContent = 'copy', 2000);
+    });
+  });
+</script>
+</body>
+</html>

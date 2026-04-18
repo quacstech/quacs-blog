@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Culture on QuACS</title>
+    <link>https://quacs.tech/tags/culture/</link>
+    <description>Recent content in Culture on QuACS</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://quacs.tech/tags/culture/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shift-left-left: quality starts when you walk through the door</title>
+      <link>https://quacs.tech/articles/processes-and-procedures/shift-left-left/</link>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://quacs.tech/articles/processes-and-procedures/shift-left-left/</guid>
+      <description>&lt;p&gt;You have heard of shift left. Test earlier, catch issues sooner, move quality upstream in the development lifecycle. It is good advice and it works. But there is a version of it that goes further — further left than requirements, further left than design, further left than the first conversation about a feature.&lt;/p&gt;&#xA;&lt;p&gt;I call it shift-left-left. And it starts when you walk through the door in the morning.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-team&#34;&gt;The team&lt;/h2&gt;&#xA;&lt;p&gt;The team I am thinking of was not dysfunctional. Everyone was skilled. Everyone had experience — some from large enterprises, some from startups, some from agencies. That was precisely the problem.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
