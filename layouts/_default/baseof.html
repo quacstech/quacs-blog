@@ -83,20 +83,6 @@
     handleSearch(this.value.trim(), document.getElementById("search-results-mobile"));
   });
 </script>
-
-  document.getElementById("search-input").addEventListener("input", function () {
-    const query = this.value.trim();
-    const box = document.getElementById("search-results");
-    if (!query || !fuse) { box.innerHTML = ""; return; }
-    const results = fuse.search(query).slice(0, 8);
-    box.innerHTML = results.map(r => `
-      <a href="${r.item.url}" class="search-result-item">
-        <div class="search-result-title">${r.item.title}</div>
-        <div class="search-result-meta">${r.item.section}</div>
-      </a>
-    `).join("");
-  });
-</script>
 <script>
   document.querySelectorAll('pre').forEach(pre => {
     const btn = document.createElement('button');
