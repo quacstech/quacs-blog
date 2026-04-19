@@ -101,6 +101,10 @@ header {
 
 .search-box::placeholder { color: #bbb; }
 
+.strikethrough {
+  text-decoration: line-through;
+}
+
 /* MAIN */
 main { padding: 24px 32px; }
 

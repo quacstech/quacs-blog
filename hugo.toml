@@ -3,8 +3,9 @@ languageCode = "en-us"
 title = "QuACS"
 
 [params]
-  description = "Case studies, processes, and honest reflections from a senior QA engineer working at the intersection of quality, agile, and AI."
-  headline = "Hands-on quality engineering — from test strategy to AI workflows. Experienced yet still eager to learn."
+  description = "Case studies, processes, and honest reflections from a senior QA engineer working at the intersection of quality, agile, and AI. Experienced yet still eager to learn."
+  headline = "Quality Assurance Case Studies - just QuACS... facts."
+  headline2 = "Hands-on quality engineering — from test strategy to AI workflows."
 
 [[menus.main]]
   name = "home"
