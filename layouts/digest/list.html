@@ -1,0 +1,9 @@
+{{ define "main" }}
+{{ $latest := index (.Pages.ByDate.Reverse) 0 }}
+{{ if $latest }}
+  <meta http-equiv="refresh" content="0; url={{ $latest.RelPermalink }}">
+  <script>window.location.href = "{{ $latest.RelPermalink }}";</script>
+{{ else }}
+  <div class="section-title">no digests yet</div>
+{{ end }}
+{{ end }}

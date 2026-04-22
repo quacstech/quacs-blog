@@ -337,6 +337,29 @@ article hr {
   }
 }
 
+.digest-body h2 {
+  font-size: 13px;
+  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #bbb;
+  margin: 2em 0 0.8em;
+}
+
+.digest-body h3 {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0 0 0.4em;
+}
+
+.digest-body code {
+  font-size: 11px;
+  background: none;
+  border: none;
+  color: #F5C842;
+  padding: 0;
+}
+
 /* FOOTER */
 footer {
   display: flex;

@@ -1,6 +1,7 @@
 baseURL = "https://quacs.tech"
 languageCode = "en-us"
 title = "QuACS"
+buildFuture = true
 
 [params]
   description = "Case studies, processes, and honest reflections from a senior QA engineer working at the intersection of quality, agile, and AI. Experienced yet still eager to learn."
@@ -17,10 +18,15 @@ title = "QuACS"
   url = "/articles/"
   weight = 2
 
+  [[menus.main]]
+  name = "ai digest"
+  url = "/digest/"
+  weight = 3
+
 [[menus.main]]
   name = "about"
   url = "/about/"
-  weight = 3
+  weight = 4
 
 [[menus.sidebar]]
   name = "quality assurance"
@@ -51,3 +57,4 @@ title = "QuACS"
 
 [taxonomies]
   tag = "tags"
+  category = "categories"
