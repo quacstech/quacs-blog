@@ -382,14 +382,14 @@ article hr {
 .tldr-grid {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
   margin: 0;
 }
 
 .tldr-item {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 0;
 }
 
 .tldr-grid dt {
@@ -398,7 +398,7 @@ article hr {
   text-transform: uppercase;
   color: #4a4a4a;
   font-weight: 600;
-  line-height: 1.8;
+  line-height: 1.5;
 }
 
 .tldr-grid dd {
@@ -406,7 +406,7 @@ article hr {
   font-size: 15px;
   color: #6b6b6b;
   line-height: 1.8;
-  margin: 0;
+  margin: -15px 0 0 0;
 }
 
 /* FOOTER */
