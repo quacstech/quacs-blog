@@ -1,6 +1,6 @@
 ---
 title: "Postman, Newman, and a little bash to make it useful"
-date: 2026-03-12
+date: 2026-02-12
 description: "How to run Postman collections from the command line with Newman and wrap the output in a bash script that actually tells you what went wrong."
 tags: ["postman", "newman", "api", "api testing", "bash"]
 ---

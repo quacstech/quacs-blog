@@ -360,6 +360,55 @@ article hr {
   padding: 0;
 }
 
+/* TLDR BOX */
+
+.tldr-box {
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin-bottom: 28px;
+  background: #fdfcf5;
+}
+
+.tldr-label {
+  font-family: 'Courier New', monospace;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #d4a002;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.tldr-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+}
+
+.tldr-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tldr-grid dt {
+  font-family: 'Georgia', serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.tldr-grid dd {
+  font-family: 'Georgia', serif;
+  font-size: 15px;
+  color: #6b6b6b;
+  line-height: 1.8;
+  margin: 0;
+}
+
 /* FOOTER */
 footer {
   display: flex;

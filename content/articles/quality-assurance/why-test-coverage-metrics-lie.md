@@ -1,11 +1,13 @@
 ---
 title: "Why test coverage metrics lie to you"
-date: 2025-03-12
+date: 2025-03-15
 description: "A case study from a legacy migration project where 94% coverage masked a critical blind spot in business logic."
 pinned: false
-draft: true
+draft: false
 tags: ["test coverage", "qa", "case study", "metrics"]
 ---
+
+{{< tldr context="Legacy billing system migration, full test suite rewritten from scratch, 94% coverage reported." issue="Coverage metrics masked a critical edge case in business logic that only appeared for enterprise accounts." approach="Stopped reporting coverage as a health metric. Mapped tests explicitly to business rules with named owners." outcome="Systematic gap identified. Coverage still runs — it just stopped being trusted as a proxy for quality." >}}
 
 We had 94% test coverage. The migration still broke production.
 

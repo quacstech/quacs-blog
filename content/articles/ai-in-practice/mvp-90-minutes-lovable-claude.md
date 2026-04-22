@@ -1,6 +1,6 @@
 ---
 title: "Working MVP in 90 minutes — Lovable, Anthropic API, and knowing what you want to build"
-date: 2026-04-17
+date: 2026-04-10
 description: "How I went from idea to working MVP in a single evening — and why the 90 minutes was the easy part."
 tags: ["ai in practice", "lovable", "claude", "mvp", "case study"]
 draft: false
