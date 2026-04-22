@@ -1,7 +1,7 @@
 ---
 title: "About the author and this page"
 date: 2026-01-12
-description: "A case study in successful agile adoption — where the turning point was not the team understanding"
+description: "Written by a human. Edited by Claude. Quality engineering, honestly."
 ---
 
 
