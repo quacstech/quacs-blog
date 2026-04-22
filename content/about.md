@@ -1,6 +1,6 @@
 ---
 title: "About the author and this page"
-date: 2026-03-18
+date: 2026-01-12
 description: "A case study in successful agile adoption — where the turning point was not the team understanding"
 ---
 
@@ -26,7 +26,7 @@ Open to senior QA, quality engineering, and test architecture roles — particul
 
  Pronounced "quacks." The duck is intentional.
 
-A place to write about quality engineering the way it actually works. Real projects, real constraints, real outcomes. Details anonymised where necessary, problems and approaches genuine, own by me, but edited by my firend Claude (Sonnet 4.6). Thoughts and ideas are just a byproduct ;)
+A place to write about quality engineering the way it actually works. Real projects, real constraints, real outcomes. Details anonymised where necessary, problems and approaches genuine, own by me, but edited by my firend Claude (Sonnet 4.6).Thoughts and ideas are just a byproduct ;)
 
 ### Case studies and projects
 
