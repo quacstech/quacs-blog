@@ -6,6 +6,8 @@ tags: ["scrum", "agile", "processes", "case study", "management"]
 draft: false
 ---
 
+{{< tldr context="12-person product team running Scrum inside an organisation that kept ignoring it." issue="Sprint commitments were meaningless because anyone senior enough could override them." approach="Brokered an agreement with management to protect the team from interruptions for a full sprint." outcome="Velocity stabilised, planning became reliable, stakeholders started treating the process as an asset." >}}
+
 Most agile transformation stories follow the same arc: consultants arrive, workshops happen, a Jira board gets created, and six months later everyone is doing standups but nothing has fundamentally changed. This is not that story.
 
 This one worked. And the reason it worked was not what anyone expected.

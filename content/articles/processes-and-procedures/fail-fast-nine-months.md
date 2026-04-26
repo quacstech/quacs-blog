@@ -6,6 +6,8 @@ tags: ["processes and procedures", "fail fast", "workshops", "scrum", "case stud
 draft: true
 ---
 
+{{< tldr context="Large enterprise web application, customer-facing, three development teams, two domains." issue="A feature assumed to be simple spanned three teams, two domains, and nine months of MVP work nobody had budgeted for." approach="Organised and facilitated two full-day workshops with all teams, all product owners, post-its and a wall." outcome="Feature dropped entirely. Nine months of wasted effort avoided in two days of structured conversation." >}}
+
 <!-- 
 FRAMING DECISION NEEDED:
 Version A ends with the "fail fast" principle (see bottom of file).

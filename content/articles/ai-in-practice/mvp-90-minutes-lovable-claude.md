@@ -6,6 +6,8 @@ tags: ["ai in practice", "lovable", "claude", "mvp", "case study"]
 draft: false
 ---
 
+{{< tldr context="Solo evening build, Lovable and the Anthropic API, one clear idea." issue="Most 'built with AI' stories skip the part that actually made it work." approach="Defined the full sequence, inputs, outputs, and architecture before writing a single prompt." outcome="Working MVP in 90 minutes — CV analysis, scoring, tailored output, downloadable PDFs." >}}
+
 There is a version of this story that is about speed. Ninety minutes, working app, Claude API, impressive. That version is true but it is not the interesting part.
 
 The interesting part is what happened before I opened Lovable.

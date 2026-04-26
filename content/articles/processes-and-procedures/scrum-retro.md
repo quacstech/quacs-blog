@@ -5,6 +5,8 @@ description: "A case study in teams that adopted Scrum by scheduling meetings â€
 tags: ["scrum", "agile", "retrospective", "processes", "case study"]
 ---
 
+{{< tldr context="Product team of seven, two-week sprints, solid velocity." issue="Retrospectives had quietly disappeared, so known problems never became action points." approach="Documented the pattern and made the case for what a working retrospective actually produces." outcome="The uncomfortable truth: skipping the retro is a decision to stay exactly as you are." >}}
+
 Every team does Scrum. Just ask them.
 
 They have dailies. They have a board with columns. Someone, at some point, read the Scrum Guide or at least the first three pages of it. There are sprints, there are planning sessions, there are backlogs with varying degrees of grooming. It's Scrum. Definitely Scrum.

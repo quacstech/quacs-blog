@@ -7,6 +7,8 @@ pinned: true
 draft: false
 ---
 
+{{< tldr context="Experienced but misaligned team, mixed backgrounds, different definitions of good." issue="Inconsistent quality standards that no process change was fixing." approach="Shifted focus to mindset and daily habits before touching any formal process." outcome="Consistent code reviews, better dailies, new members absorbing the culture naturally within a quarter." >}}
+
 You have heard of shift left. Test earlier, catch issues sooner, move quality upstream in the development lifecycle. It is good advice and it works. But there is a version of it that goes further — further left than requirements, further left than design, further left than the first conversation about a feature.
 
 I call it shift-left-left. And it starts when you walk through the door in the morning.

@@ -5,6 +5,8 @@ description: "How to run Postman collections from the command line with Newman a
 tags: ["postman", "newman", "api", "api testing", "bash"]
 ---
 
+{{< tldr context="API project with a growing test suites in Postman and no automation pipeline." issue="Produced results nobody could act on — no structure, no history, no visibility." approach="Wrapped Newman in a bash script to generate structured HTML reports on each run." outcome="Automated reporting integrated into CI, results readable by the whole team without tooling knowledge." >}}
+
 Most teams write Postman collections, run them manually, and call it a day. This is about taking that collection out of the GUI and into a pipeline — with a bash wrapper that makes the output readable for everyone, not just the person who ran it.
 
 ## The problem with just running Newman

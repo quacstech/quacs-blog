@@ -6,6 +6,8 @@ tags: ["quality assurance", "test coverage", "metrics", "selenium", "case study"
 draft: true
 ---
 
+{{< tldr context="Large complex web application, early Selenium automation era, multiple teams across countries." issue="Test coverage metrics were the goal — not quality, not confidence. The metric." approach="No approach. Junior tester, browsing a repository held up as an example of good practice." outcome="25–30% of tests asserted true and nothing else. Every run green. Nobody asked questions." >}}
+
 This was a long time ago. Gmail was still in beta. Selenium was the tool everyone was learning, and automated test coverage was the thing every management team wanted to show on a dashboard.
 
 I was a junior tester on a complex web application. The project had manual testing as its foundation and was building out Selenium automation alongside it. Scenarios were written, reviewed, and approved. Test cases went through sign-off. Code was reviewed. Everything followed the right process.

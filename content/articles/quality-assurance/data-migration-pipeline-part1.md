@@ -6,6 +6,8 @@ tags: ["python", "api", "data migration", "testing", "qa", "ai in practice", "ca
 draft: false
 ---
 
+{{< tldr context="API project migrating data sources without any customer-visible change." issue="Existing tests proved the system worked — not that it returned the same data as before." approach="Built a custom Python comparison pipeline, incrementally, against real production data." outcome="Systematic differences caught across over 200,000 records that the full test suite missed entirely." >}}
+
 The goal of a successful data migration is invisibility. The customer sends a request, gets a response, and has no idea that the system serving that response changed entirely underneath. No missing fields, no value drift, no subtle differences in how arrays are ordered or how dates are formatted. Identical, for all practical purposes, to what came before.
 
 That is a harder problem than it sounds.

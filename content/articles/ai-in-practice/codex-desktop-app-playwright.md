@@ -6,6 +6,8 @@ tags: ["ai in practice", "codex", "playwright", "electron", "testing", "case stu
 draft: true
 ---
 
+{{< tldr context="Solo experiment, personal productivity problem, no production pressure." issue="Wanted a simple local app for daily goal tracking — and wanted to know if Codex could build it and test it as we go." approach="Defined the functionality, built incrementally through Codex prompts. All code written by Codex, including the tests." outcome="Working desktop app with categories, time budgets, persistent state, and 12 automated GUI tests (with a twist)." >}}
+
 Two goals, really. A practical one: a lightweight desktop app for daily goal tracking — categories, tasks within them, time budgets, persistent state. Something local, something simple, something that would not require opening a browser or logging into anything.
 
 And an experimental one: find out whether Codex could build it.
