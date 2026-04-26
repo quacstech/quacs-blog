@@ -3,7 +3,7 @@ title: "Why test coverage metrics lie to you"
 date: 2025-03-15
 description: "A case study from the past where pursuing metrics went really really wrong"
 pinned: false
-draft: false
+draft: true
 tags: ["test coverage", "qa", "case study", "metrics"]
 ---
 
