@@ -1,7 +1,7 @@
 ---
 title: "Why test coverage metrics lie to you"
 date: 2025-03-15
-description: "A case study from a legacy migration project where 94% coverage masked a critical blind spot in business logic."
+description: "A case study from the past where pursuing metrics went really really wrong"
 pinned: false
 draft: false
 tags: ["test coverage", "qa", "case study", "metrics"]
