@@ -47,6 +47,11 @@ buildFuture = true
   name = "ai in practice"
   url = "/articles/ai-in-practice/"
   weight = 4
+
+[[menus.sidebar]]
+  name = "archive"
+  url = "/archive/"
+  weight = 5
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 

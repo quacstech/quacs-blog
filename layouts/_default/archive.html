@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{ $digests := where .Site.RegularPages "Section" "digest" }}
+<article>
+  <h1 class="article-title">{{ .Title }}</h1>
+  {{ with .Params.description }}
+  <p class="article-desc">{{ . }}</p>
+  {{ end }}
+  <hr>
+  <div class="section-title">{{ len $digests }} digests</div>
+  <div class="article-list">
+    {{ range $digests.ByDate.Reverse }}
+    <a href="{{ .RelPermalink }}" class="article-item">
+      <div class="article-meta">{{ .Date.Format "2006-01-02" }}</div>
+      <div class="article-title">{{ .Title }}</div>
+      {{ with .Params.description }}<div class="article-desc">{{ . }}</div>{{ end }}
+    </a>
+    {{ end }}
+  </div>
+</article>
+{{ end }}
