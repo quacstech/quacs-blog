@@ -4,7 +4,7 @@
   <p>{{ .Site.Params.description }}</p>
 </div>
 
-{{ $articles := where .Site.RegularPages "Section" "!=" "digest" }}
+{{ $articles := where (where .Site.RegularPages "Section" "!=" "digest") "RelPermalink" "!=" "/about/" }}
 {{ $pinned := where $articles "Params.pinned" true }}
 {{ if $pinned }}
 <div class="section-title">pinned</div>

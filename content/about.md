@@ -1,3 +1,8 @@
++++
+date = '2026-05-05T00:00:00+02:00'
+title = 'About'
++++
+
 ## Mateusz Rakowski — Senior Quality Engineering Specialist
 
 Senior Quality Engineering Specialist based in Warsaw. Working in software quality since 2013 across fintech, compliance, and enterprise platforms. Agile Coach and Scrum Master. Before QA — four years in web design and UI/UX, which turned out to be more than useful.
