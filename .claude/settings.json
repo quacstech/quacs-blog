@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit",
+      "Bash(git status)",
+      "Bash(git diff)",
+      "Bash(git add)",
+      "Bash(git commit)",
+      "Bash(git push)",
+      "Bash(hugo server)",
+      "Bash(hugo build)"
+    ]
+  }
+}
