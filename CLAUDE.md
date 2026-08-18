@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Handover
+
+@quacs-handover.md
+
 ## What this is
 
 QuACS (quacs.tech) — a Hugo static site for Mateusz Rakowski's QA/quality-engineering blog. Plain HTML/CSS, no JS framework, no build pipeline beyond Hugo itself (no package.json, no go.mod — this is not a Hugo Modules project).
