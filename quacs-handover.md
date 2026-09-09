@@ -124,7 +124,7 @@ Case study articles get a TL;DR box at the top, after the frontmatter, before th
 
 ---
 
-## Articles pipeline — needs full information and writing (15)
+## Articles pipeline — needs full information and writing (16)
 
 When Mat provides bullet points or context, draft the article following the writing style above, then create a Hugo file with `draft: true`.
 
@@ -171,7 +171,16 @@ Ask an agent to write tests for a feature and it surfaces edge cases nobody wrot
 Companion piece to article 8 (cost of automation) — same daily grind of reading failed test-run logs and triaging failures (flaky UI, wrong permissions, changed behaviour, genuine regressions). Point an AI agent at the failure output first: it pre-sorts known flaky patterns from novel failures, cutting the reading time down hard. What it cannot do is make the call on what remains — real regression, wrong test, or wrong requirement. That judgment did not get automated away; it got concentrated into less time and fewer, harder decisions. Case study — needs real numbers from the same suite/team as article 8.
 
 **15. Claude Code for manual testing**
-Case study plus how-to. Using Claude Code as a manual/exploratory testing tool rather than for writing automated suites — ad hoc verification, sanity checks, poking at a feature the way a manual tester would, but with an agent doing the poking. Two parts: the case study itself (a real session, what was tested, what it caught, what it missed), and a practical best-practices section — how to structure context so it tests intelligently rather than shallowly, and the fastest way to set it up from scratch on a new project (no elaborate scaffolding required). Needs a real session from Mat to ground it — specifics on what was tested and what the setup actually looked like.
+Case study plus how-to. Using Claude Code as a manual/exploratory testing tool rather than for writing automated suites — ad hoc verification, sanity checks, poking at a feature the way a manual tester would, but with an agent doing the poking. Needs a real session from Mat to ground it — specifics on what was tested and what the setup actually looked like. Working outline:
+
+1. **Hook** — the usual AI-testing conversation is "can it write tests." Different question: can it *be* the tester, not the one writing the regression suite.
+2. **The case** *(waiting on Mat's details)* — what was being tested and the state of the feature; what was asked of it vs. what it did unprompted; what it caught / what it missed; a time or effort number if there's one worth quoting.
+3. **Fastest setup from scratch** — what context it actually needs before it can test intelligently, probably far less than assumed; the floor is repo access plus a plain-language brief of what the feature should do, not a scaffolded test framework; what to deliberately not give it (a steps-to-follow script) so it explores rather than executes one.
+4. **Best practices** — give intent and acceptance criteria, not a checklist, since the checklist is what kills the "manual" part of manual testing; let it decide what to try next based on what it just saw, same as a human tester; know where you still have to step in — ambiguous results, severity judgment calls, anything needing product context it doesn't have.
+5. **Principle / uncomfortable truth** — likely candidate: the setup that takes longest to build is the one that tries hardest to constrain it. The fast setup and the good setup are the same setup — trust it to explore. Sharpen once the real case is in.
+
+**16. AI as orchestrator, not author**
+Distinct from #15 — this is about pre-written, version-controlled scripts (bash, Python) that already do something deterministic: a test, a data check, a deploy step. Claude Code's job is to run them, vary their parameters, read the output, and debug failures conversationally — it never writes the script itself, it drives one that already exists. The pitch: this is the version of "AI plus tests" that doesn't trade away determinism. Ad hoc AI-generated test code changes every run (the exact problem raised in article 1); a fixed script executed the same way every time stays repeatable. Consistency comes from the script, speed and judgment come from the agent — kept deliberately separate. Ending candidate: the value of AI here isn't that it writes less deterministic code, it's that it never has to, because what's running was never up for negotiation in the first place.
 
 ---
 
