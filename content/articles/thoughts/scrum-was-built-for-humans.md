@@ -3,7 +3,7 @@ title: "Scrum was built for humans. AI agents aren't."
 date: 2026-09-09
 description: "Scrum solves problems that come from being human — context switching, batching, the cost of a meeting. AI agents don't have those problems. An observation on what that means for QA, not a verdict on Scrum."
 tags: ["ai", "scrum", "process", "qa", "thoughts"]
-draft: true
+draft: false
 ---
 
 This is not an argument that Scrum is broken, or that agile is dead, or any of the other headlines that get written every time a new tool shows up. It is an observation about what a framework is actually for, and what happens when the thing it was built around stops being true.
