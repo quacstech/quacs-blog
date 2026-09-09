@@ -123,7 +123,7 @@ Case study articles get a TL;DR box at the top, after the frontmatter, before th
 
 ---
 
-## Articles pipeline — needs full information and writing (10)
+## Articles pipeline — needs full information and writing (13)
 
 When Mat provides bullet points or context, draft the article following the writing style above, then create a Hugo file with `draft: true`.
 
@@ -162,6 +162,15 @@ Granular, specific, separated suites. Each test is an information bearer of its 
 
 **12. What test coverage actually is**
 Not how many tests, but what kind of tests and what value they bring to the product. Confidence of delivering a good app for customers — not a number on a dashboard. Connects to the assert.that(true) article already written.
+
+**13. The agent that tested itself**
+When the same AI writes both the feature code and its own tests, there is no independent check — it is grading its own homework. The traditional case for separating dev and QA was never bureaucracy, it was independence, and that argument gets sharper, not weaker, once "dev" is an agent with no incentive to find its own bugs. Needs a real instance to ground it — observational otherwise.
+
+**14. When the AI finds gaps the spec never had**
+Ask an agent to write tests for a feature and it surfaces edge cases nobody wrote down — not because it is smart, but because it does not share the human habit of only testing what was discussed. QA's role shifts from inventing edge cases to triaging which AI-surfaced ones are real risk versus noise. Needs a real example of an AI-found gap.
+
+**15. Triage got faster. Judgment didn't.**
+Companion piece to article 9 (cost of automation) — same daily grind of reading failed test-run logs and triaging failures (flaky UI, wrong permissions, changed behaviour, genuine regressions). Point an AI agent at the failure output first: it pre-sorts known flaky patterns from novel failures, cutting the reading time down hard. What it cannot do is make the call on what remains — real regression, wrong test, or wrong requirement. That judgment did not get automated away; it got concentrated into less time and fewer, harder decisions. Case study — needs real numbers from the same suite/team as article 9.
 
 ---
 
