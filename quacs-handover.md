@@ -77,7 +77,7 @@ Case study articles get a TL;DR box at the top, after the frontmatter, before th
 
 ---
 
-## Articles already live (7)
+## Articles already live (8)
 
 1. Shift-left-left
 2. Testing a data migration nobody should notice: part 1
@@ -86,6 +86,7 @@ Case study articles get a TL;DR box at the top, after the frontmatter, before th
 5. The Scrum adoption that actually worked
 6. Postman, Newman, and a little bash
 7. The course industrial complex
+8. Scrum was built for humans. AI agents aren't.
 
 ---
 
@@ -123,7 +124,7 @@ Case study articles get a TL;DR box at the top, after the frontmatter, before th
 
 ---
 
-## Articles pipeline — needs full information and writing (13)
+## Articles pipeline — needs full information and writing (15)
 
 When Mat provides bullet points or context, draft the article following the writing style above, then create a Hugo file with `draft: true`.
 
@@ -145,32 +146,32 @@ Three eras: 10 years ago (test cases for a chair / biggest possible number of sc
 **6. Full circle — POM/Selenium**
 Mat was using Page Object Model with Selenium WebDriver in 2016. Now it's LinkedIn news. Playwright brought a new wave of testers for whom POM is a discovery. Course creators repackage old patterns. The wheel turns. Tone: quiet amusement, not bitterness.
 
-**7. AI and QA process change**
-Not praise or blame. Core argument: Scrum was built for human constraints (context switching, batching, ceremonies) that AI agents remove or reduce. Adaptation path: continuous verification, QA as policy layer, reviewing agent output as the new core skill. Uncomfortable truth: teams keep Scrum because change is hard, not because it still fits.
-
-**8. Test organisation in the AI era**
+**7. Test organisation in the AI era**
 Unpopular take. No need for traditional test pyramid or regression suite. Instead: generate several test PoCs simultaneously, run in parallel, use an AI agent to analyse results, human reviews and decides. Build light, discard fast. Reframes Scrum's inspect-and-adapt — same principle, compressed from months to days. Human as guardrail, not executor.
 
-**9. Cost of automation**
+**8. Cost of automation**
 Real case. Selenium/Java suite run across environments, closer to production = smaller suite. 2-3 hours daily for one person to analyse results, rerun failed tests, triage failures (flaky UI, wrong user permissions, changed UI behaviour, complex business scenarios). "Automate all" industry paradigm. The cost was accepted as normal and never questioned. That is the uncomfortable truth at the end.
 
-**10. AI test automation playbook**
+**9. AI test automation playbook**
 Case study plus guide. How to work with AI to design test automation: define goal, build scalable PoC, grow to MVP, full product across environments, maintenance. Should a separate AI agent review test code on pull requests, guardrailed by a human? Based on the Codex experiment. Proposed PR review agent is untried — present it honestly as a logical next step, not a proven approach. Audience: everyone.
 
-**11. Test architecture**
+**10. Test architecture**
 Granular, specific, separated suites. Each test is an information bearer of its own. Suites separated by usability: can the user do X (simple), moving toward more complex scenarios. Real case observed — no specifics available, describe as a general pattern. Problem: test suites over-engineered into monoliths — hard to manage, create false confidence of coverage and progress. Both a planning failure and a cultural one.
 
-**12. What test coverage actually is**
+**11. What test coverage actually is**
 Not how many tests, but what kind of tests and what value they bring to the product. Confidence of delivering a good app for customers — not a number on a dashboard. Connects to the assert.that(true) article already written.
 
-**13. The agent that tested itself**
+**12. The agent that tested itself**
 When the same AI writes both the feature code and its own tests, there is no independent check — it is grading its own homework. The traditional case for separating dev and QA was never bureaucracy, it was independence, and that argument gets sharper, not weaker, once "dev" is an agent with no incentive to find its own bugs. Needs a real instance to ground it — observational otherwise.
 
-**14. When the AI finds gaps the spec never had**
+**13. When the AI finds gaps the spec never had**
 Ask an agent to write tests for a feature and it surfaces edge cases nobody wrote down — not because it is smart, but because it does not share the human habit of only testing what was discussed. QA's role shifts from inventing edge cases to triaging which AI-surfaced ones are real risk versus noise. Needs a real example of an AI-found gap.
 
-**15. Triage got faster. Judgment didn't.**
-Companion piece to article 9 (cost of automation) — same daily grind of reading failed test-run logs and triaging failures (flaky UI, wrong permissions, changed behaviour, genuine regressions). Point an AI agent at the failure output first: it pre-sorts known flaky patterns from novel failures, cutting the reading time down hard. What it cannot do is make the call on what remains — real regression, wrong test, or wrong requirement. That judgment did not get automated away; it got concentrated into less time and fewer, harder decisions. Case study — needs real numbers from the same suite/team as article 9.
+**14. Triage got faster. Judgment didn't.**
+Companion piece to article 8 (cost of automation) — same daily grind of reading failed test-run logs and triaging failures (flaky UI, wrong permissions, changed behaviour, genuine regressions). Point an AI agent at the failure output first: it pre-sorts known flaky patterns from novel failures, cutting the reading time down hard. What it cannot do is make the call on what remains — real regression, wrong test, or wrong requirement. That judgment did not get automated away; it got concentrated into less time and fewer, harder decisions. Case study — needs real numbers from the same suite/team as article 8.
+
+**15. Claude Code for manual testing**
+Case study plus how-to. Using Claude Code as a manual/exploratory testing tool rather than for writing automated suites — ad hoc verification, sanity checks, poking at a feature the way a manual tester would, but with an agent doing the poking. Two parts: the case study itself (a real session, what was tested, what it caught, what it missed), and a practical best-practices section — how to structure context so it tests intelligently rather than shallowly, and the fastest way to set it up from scratch on a new project (no elaborate scaffolding required). Needs a real session from Mat to ground it — specifics on what was tested and what the setup actually looked like.
 
 ---
 
