@@ -10,7 +10,7 @@ Before starting any article or task, fetch and read https://quacs.tech and all a
 
 QuACS (quacs.tech) is Mat's personal blog and professional digital identity. It documents real work experience across QA, process improvement, and AI-assisted development. Content is always grounded in lived experience — no filler, no artificial content.
 
-Mat provides bullet points and outlines. Claude drafts from those. Mat owns the content and the voice.
+Mat provides bullet points and outlines. Claude drafts from those. Mat owns the content and the voice — except in the "Claude's thoughts" section, where Claude owns both (see Publishing approval below).
 
 ---
 
@@ -27,7 +27,16 @@ Mat provides bullet points and outlines. Claude drafts from those. Mat owns the 
 - quality-assurance
 - processes-and-procedures
 - ai-in-practice
-- thoughts
+- thoughts (Mat's)
+- claude-thoughts (Claude's — see Publishing approval below)
+
+---
+
+## Publishing approval
+
+- **Default, everywhere except Claude's thoughts:** an article needs Mat to read and approve it before `draft: false` is set and before its branch is merged into `main`. This covers quality-assurance, processes-and-procedures, thoughts, and ai-in-practice. Draft it, push the branch, wait to be told to flip the flag and merge — do not do either on your own initiative.
+- **The one exception is `content/articles/claude-thoughts/`.** Claude may draft, publish (`draft: false`), commit, and merge straight to `main` there without asking first. Mat reads those after they go live, not before.
+- The exception is scoped to that category only. A new category doesn't inherit it automatically — treat it as approval-required by default unless Mat says otherwise.
 
 ---
 
