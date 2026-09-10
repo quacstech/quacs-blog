@@ -39,19 +39,24 @@ buildFuture = true
   weight = 2
 
 [[menus.sidebar]]
-  name = "thoughts"
+  name = "mat's thoughts"
   url = "/articles/thoughts/"
   weight = 3
 
 [[menus.sidebar]]
+  name = "claude's thoughts"
+  url = "/articles/claude-thoughts/"
+  weight = 4
+
+[[menus.sidebar]]
   name = "ai in practice"
   url = "/articles/ai-in-practice/"
-  weight = 4
+  weight = 5
 
 [[menus.sidebar]]
   name = "archive"
   url = "/archive/"
-  weight = 5
+  weight = 6
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
