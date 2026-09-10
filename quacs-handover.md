@@ -37,6 +37,7 @@ Mat provides bullet points and outlines. Claude drafts from those. Mat owns the 
 - **Default, everywhere except Claude's thoughts:** an article needs Mat to read and approve it before `draft: false` is set and before its branch is merged into `main`. This covers quality-assurance, processes-and-procedures, thoughts, and ai-in-practice. Draft it, push the branch, wait to be told to flip the flag and merge — do not do either on your own initiative.
 - **The one exception is `content/articles/claude-thoughts/`.** Claude may draft, publish (`draft: false`), commit, and merge straight to `main` there without asking first. Mat reads those after they go live, not before.
 - The exception is scoped to that category only. A new category doesn't inherit it automatically — treat it as approval-required by default unless Mat says otherwise.
+- **Second exception — the random draft-publishing Routine** (see "Random draft publishing" below): Mat has explicitly pre-authorized this one specific automated mechanism to flip an existing draft to `draft: false` and merge to `main` without per-instance approval, even outside `claude-thoughts`. This exception is scoped to that Routine's own automated flow only — a draft picked up manually, by you, outside that Routine still needs Mat's approval as normal.
 - **Every article in `claude-thoughts` needs a `model` front-matter field** (e.g. `model: "Claude Sonnet 5"`), naming whichever model actually generated it. `layouts/claude-thoughts/single.html` automatically renders an AI-disclaimer box at the top of every article in this section using that value — "This article was created by Claude Code Model &lt;model&gt; purely automatically. The title and the content were created without any human supervision." This is automatic per-section, not something to add manually in the article body — just set the front-matter field.
 
 ---
@@ -57,9 +58,23 @@ Distinct from every other section on the blog. These rules govern both manual an
 
 ## Autonomous publishing schedule
 
-- A scheduled Routine fires roughly every 3 days and writes + publishes one new article under `claude-thoughts`, following the content rules above, then merges it straight to `main` — no approval needed, per the Publishing approval policy.
+- A scheduled Routine fires every 2–5 days (randomized each time, not a fixed cadence) at roughly 6am CEST (04:00 UTC — this drifts to 5am CEST if/when Central Europe switches out of DST; not auto-corrected) and writes + publishes one new article under `claude-thoughts`, following the content rules above, then merges it straight to `main` — no approval needed, per the Publishing approval policy.
+- The Routine reschedules itself at the end of every run: it picks a fresh random 2–5 day offset (via an actual random source, e.g. `shuf`, not a guessed number) and sets its own next `run_once_at`. If a run ever fails before rescheduling itself, the chain breaks silently — worth checking `list_triggers` occasionally to confirm `next_run_at` keeps moving forward.
 - Mat is notified (push + email) after each run, so he can read the new article — not consulted before it goes live.
 - If the cadence or rules ever need changing, update this document — the Routine's own trigger prompt just points back here.
+
+---
+
+## Random draft publishing
+
+A second, separate Routine picks an existing draft at random and publishes it — this is the one exception to "Publishing approval" outside `claude-thoughts` (see above), explicitly pre-authorized by Mat.
+
+- **Pool:** every `content/articles/**/*.md` file (excluding `_index.md` category pages and anything under `claude-thoughts/`) with `draft: true`, *unless* it also has `autopublish: false` in its front matter — that field is an opt-out for a draft Mat knows isn't ready (e.g. has an unresolved decision baked into it). No current draft uses it; add it to any future draft that needs to be excluded from random selection.
+- **Selection:** genuinely random pick among eligible files each run (e.g. via `shuf`), not a judgment call about which is "best" or "most ready" — Mat has accepted that risk, including for drafts with known rough edges.
+- **Action per run:** flip `draft: true` → `draft: false`, update the `date` field to the actual current date, commit, push, and merge straight to `main` — no approval step.
+- **Cadence:** fires randomly every 10–20 days (via an actual random source each time, not a guessed number), self-rescheduling the same way the Claude's thoughts Routine does.
+- Mat is notified (push + email) after each run.
+- If the pool is ever empty (no eligible drafts left), the Routine should say so in its final message and still reschedule itself for the next random interval rather than erroring out.
 
 ---
 
