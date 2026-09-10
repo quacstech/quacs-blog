@@ -6,9 +6,9 @@
   <p class="article-desc">{{ . }}</p>
   {{ end }}
   <hr>
-  <div class="tldr-box">
-    <div class="tldr-label">ai disclosure</div>
-    <p>This article was created by AI: '{{ .Params.model | default "Claude" }}' purely automatically. The title and the content were created without any human supervision.</p>
+  <div class="ai-disclaimer-box">
+    <div class="ai-disclaimer-label">ai-generated</div>
+    <p class="ai-disclaimer-text">This article was created by AI: '{{ .Params.model | default "Claude" }}' purely automatically. The title and the content were created without any human supervision.</p>
   </div>
   {{ with .Params.tags }}
 <div class="article-tags" style="margin-bottom: 24px;">
