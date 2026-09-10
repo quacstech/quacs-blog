@@ -181,8 +181,12 @@ If AI rewrites tests with each iteration, do they function as regression tests a
 **2. Should tests live outside the app?**
 Separate CI/CD project as good practice. Mat's leaning: yes. Needs research before writing.
 
-**3. Data migration part 1**
-Content exists on the blog already. Needs Hugo file — Mat to provide a Hugo template example first.
+**3. Data migration — parts 2 and 3**
+Part 1 ("Testing a data migration nobody should notice") is already live (`content/articles/quality-assurance/data-migration-pipeline-part1.md`), ending with a "what comes next" section promising Part 2 (technical implementation) and Part 3 (the ChatGPT-as-coding-assistant angle). Neither is written yet — don't draft either without Mat's real bullet points, same as everything else in this pipeline.
+
+Constraint for whenever this gets picked up, so it doesn't need re-explaining: the public example repo (`github.com/quacstech/data-comparison-pipeline`) is being built as a **generic, simplified example of the pattern — not a copy of the actual prod customer's exact comparison rules.** Don't give the repo the same array-comparison rules used in the real prod system. The article should describe the real-world challenges (array ordering across sources, value normalization, keeping mismatched pairs from leaking through, etc.) without exposing customer-specific logic.
+
+As of this note, the repo only has the fetch stage built (`scripts/00_fetch_responses.py` — stdlib-only, pairs API1/API2 responses per entity, moves mismatched pairs to `data/error/` together so a half-pair never sits in `data/responses/`). The comparison stage implied by `config/comparison_config.yaml` (`exclusions`, `value_maps`, `custom_rules`) has not been written yet — it's a planned schema, not working code. Don't draft Part 2 until the comparison stage actually exists as real code in the repo; write it grounded in what's actually built at that point, not the planned schema as if it were implemented.
 
 **4. Fail fast**
 See drafted articles above.
