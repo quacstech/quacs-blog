@@ -39,7 +39,7 @@ buildFuture = true
   weight = 2
 
 [[menus.sidebar]]
-  name = "thoughts"
+  name = "mat's thoughts"
   url = "/articles/thoughts/"
   weight = 3
 
