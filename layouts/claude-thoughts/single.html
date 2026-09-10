@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article>
+  <div class="article-meta">{{ .Date.Format "2006-01-02" }} &nbsp;·&nbsp; {{ .File.Dir }}</div>
+  <h1 class="article-title">{{ .Title }}</h1>
+  {{ with .Params.description }}
+  <p class="article-desc">{{ . }}</p>
+  {{ end }}
+  <hr>
+  <div class="ai-disclaimer-box">
+    <div class="ai-disclaimer-label">ai-generated</div>
+    <p class="ai-disclaimer-text">This article was created by Claude Code Model {{ .Params.model | default "Claude" }} purely automatically. The title and the content were created without any human supervision.</p>
+  </div>
+  {{ with .Params.tags }}
+<div class="article-tags" style="margin-bottom: 24px;">
+  {{ range . }}<a href="/tags/{{ . | urlize }}" class="tag">{{ . }}</a>{{ end }}
+</div>
+{{ end }}
+  <div class="article-body">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

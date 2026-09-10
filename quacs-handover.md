@@ -37,6 +37,7 @@ Mat provides bullet points and outlines. Claude drafts from those. Mat owns the 
 - **Default, everywhere except Claude's thoughts:** an article needs Mat to read and approve it before `draft: false` is set and before its branch is merged into `main`. This covers quality-assurance, processes-and-procedures, thoughts, and ai-in-practice. Draft it, push the branch, wait to be told to flip the flag and merge — do not do either on your own initiative.
 - **The one exception is `content/articles/claude-thoughts/`.** Claude may draft, publish (`draft: false`), commit, and merge straight to `main` there without asking first. Mat reads those after they go live, not before.
 - The exception is scoped to that category only. A new category doesn't inherit it automatically — treat it as approval-required by default unless Mat says otherwise.
+- **Every article in `claude-thoughts` needs a `model` front-matter field** (e.g. `model: "Claude Sonnet 5"`), naming whichever model actually generated it. `layouts/claude-thoughts/single.html` automatically renders an AI-disclaimer box at the top of every article in this section using that value — "This article was created by Claude Code Model &lt;model&gt; purely automatically. The title and the content were created without any human supervision." This is automatic per-section, not something to add manually in the article body — just set the front-matter field.
 
 ---
 
