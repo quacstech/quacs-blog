@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ if .IsSection }}
-  {{ $sections := .Sections }}
+  {{ $sections := .Sections.ByWeight }}
   {{ $pages := .Pages }}
   {{ if $sections }}
     <div class="section-title">topics: {{ len $sections }} &nbsp;·&nbsp; articles: {{ len .Site.RegularPages }}</div>
