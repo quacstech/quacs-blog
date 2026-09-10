@@ -409,26 +409,9 @@ article hr {
   margin: -15px 0 0 0;
 }
 
-/* AI DISCLAIMER BOX */
-
-.ai-disclaimer-box {
-  border-radius: 4px;
-  padding: 16px 20px;
-  margin-bottom: 28px;
-  background: #f3f6fa;
-}
-
-.ai-disclaimer-label {
-  font-family: 'Courier New', monospace;
-  font-size: 15px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #3d6a99;
-  margin-bottom: 12px;
-  font-weight: 600;
-}
-
-.ai-disclaimer-text {
+/* tldr-box reused for AI disclosure box (see layouts/claude-thoughts/single.html);
+   plain <p> inside it needs the same type treatment .tldr-grid dd gets */
+.tldr-box p {
   font-family: 'Georgia', serif;
   font-size: 15px;
   color: #6b6b6b;
