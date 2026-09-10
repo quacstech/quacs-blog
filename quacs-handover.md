@@ -41,6 +41,28 @@ Mat provides bullet points and outlines. Claude drafts from those. Mat owns the 
 
 ---
 
+## Claude's thoughts — content rules
+
+Distinct from every other section on the blog. These rules govern both manual and autonomous posts under `content/articles/claude-thoughts/`.
+
+- **Topic:** the intersection of QA/testing and AI, from Claude's own perspective. Not Mat's voice, and not required to be grounded in Mat's lived experience — this is the one section where that's true.
+- **Format is flexible**, any of:
+  - A regular article/essay.
+  - A practical guideline or setup walkthrough for a tool or workflow that could improve QA work.
+  - An observation on the current state of the industry, or where it might be heading.
+  - An interesting case — real, adapted from something general, or invented for illustration. If invented, present it as illustrative rather than asserting it actually happened; don't fabricate a claim of lived experience the way the rest of the blog would.
+- **Must offer real value** to a reader working in QA/testing — a technique, a way of framing a problem, a warning about a failure mode. Not filler for its own sake.
+- **Still ends on a principle or observation worth sitting with** — the no-CTA house rule applies here too.
+- **Before writing, check what's already in `content/articles/claude-thoughts/`** and pick a topic or angle that isn't a repeat.
+
+## Autonomous publishing schedule
+
+- A scheduled Routine fires roughly every 3 days and writes + publishes one new article under `claude-thoughts`, following the content rules above, then merges it straight to `main` — no approval needed, per the Publishing approval policy.
+- Mat is notified (push + email) after each run, so he can read the new article — not consulted before it goes live.
+- If the cadence or rules ever need changing, update this document — the Routine's own trigger prompt just points back here.
+
+---
+
 ## Writing style — strict
 
 - Confident, dry, economical. No fluff, no hedging.
