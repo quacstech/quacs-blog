@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ if .IsSection }}
-  {{ $sections := .Sections }}
+  {{ $sections := .Sections.ByWeight }}
   {{ $pages := .Pages }}
   {{ if $sections }}
     <div class="section-title">topics: {{ len $sections }} &nbsp;·&nbsp; articles: {{ len .Site.RegularPages }}</div>
@@ -10,6 +10,14 @@
         <div class="article-meta">{{ .Title }}</div>
         {{ with .Params.description }}<div class="article-desc">{{ . }}</div>{{ end }}
       </a>
+      {{ end }}
+      {{ if eq .RelPermalink "/articles/" }}
+      {{ with .Site.GetPage "/digest" }}
+      <a href="{{ .RelPermalink }}" class="article-item">
+        <div class="article-meta">{{ .Title }}</div>
+        {{ with .Params.description }}<div class="article-desc">{{ . }}</div>{{ end }}
+      </a>
+      {{ end }}
       {{ end }}
     </div>
   {{ else }}

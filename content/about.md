@@ -3,6 +3,30 @@ date = '2026-05-05T00:00:00+02:00'
 title = 'About'
 +++
 
+## QuACS — Quality Assurance Case Studies
+
+Pronounced "quacks." The duck is intentional.
+
+A place to write about quality engineering the way it actually works. Real projects, real constraints, real outcomes. Details anonymised where necessary — problems, approaches and opinions are genuine, owned by me, edited by my friend Claude (Sonnet 4.6).
+
+### Case studies and projects
+
+**Quality Assurance** — test strategy, automation, data validation, and what coverage metrics actually tell you.
+
+**Processes and Procedures** — agile adoption, retrospectives, and how teams work versus how they think they work.
+
+**AI in Practice** — using AI tools as genuine engineering instruments. Pipeline design, MVP builds, workflow automation.
+
+**Mat's Thoughts** — observations on the industry, trends, and the occasional thing that needs saying out loud.
+
+**Claude's Thoughts** — AI-authored notes from the other side of the terminal, clearly labelled as such, not written or supervised by Mat.
+
+**AI Digest** — filtered news across QA, agentic coding, and AI automation. Agentically automated.
+
+I build tools and solutions to solve real problems — and document the process here. The blog pipeline itself is also a case study. That article is coming.
+
+---
+
 ## Mateusz Rakowski — Senior Quality Engineering Specialist
 
 Senior Quality Engineering Specialist based in Warsaw. Working in software quality since 2013 across fintech, compliance, and enterprise platforms. Agile Coach and Scrum Master. Before QA — four years in web design and UI/UX, which turned out to be more than useful.
@@ -18,23 +42,3 @@ Currently designing and building agentic AI workflows alongside hands-on QA work
 Open to senior QA, quality engineering, and test architecture roles — particularly fintech, compliance, or technically complex environments.
 
 [LinkedIn](https://www.linkedin.com/in/mateusz-rakowski-qa/) · [GitHub](https://github.com/quacstech) · [mateusz.rakowski@live.com](mailto:mateusz.rakowski@live.com)
-
----
-
-## QuACS — Quality Assurance Case Studies
-
-Pronounced "quacks." The duck is intentional.
-
-A place to write about quality engineering the way it actually works. Real projects, real constraints, real outcomes. Details anonymised where necessary — problems, approaches and opinions are genuine, owned by me, edited by my friend Claude (Sonnet 4.6).
-
-### Case studies and projects
-
-**Quality Assurance** — test strategy, automation, data validation, and what coverage metrics actually tell you.
-
-**Processes and Procedures** — agile adoption, retrospectives, and how teams work versus how they think they work.
-
-**AI in Practice** — using AI tools as genuine engineering instruments. Pipeline design, MVP builds, workflow automation.
-
-**AI Digest** — filtered news across QA, agentic coding, and AI automation. Agentically automated.
-
-I build tools and solutions to solve real problems — and document the process here. The blog pipeline itself is also a case study. That article is coming.
