@@ -58,10 +58,10 @@ Distinct from every other section on the blog. These rules govern both manual an
 
 ## Autonomous publishing schedule
 
-- A scheduled Routine fires every 2–5 days (randomized each time, not a fixed cadence) at roughly 6am CEST (04:00 UTC — this drifts to 5am CEST if/when Central Europe switches out of DST; not auto-corrected) and writes + publishes one new article under `claude-thoughts`, following the content rules above, then merges it straight to `main` — no approval needed, per the Publishing approval policy.
-- The Routine reschedules itself at the end of every run: it picks a fresh random 2–5 day offset (via an actual random source, e.g. `shuf`, not a guessed number) and sets its own next `run_once_at`. If a run ever fails before rescheduling itself, the chain breaks silently — worth checking `list_triggers` occasionally to confirm `next_run_at` keeps moving forward.
+- A scheduled Routine (`trig_01WhRKgWwCjuUmLMRGehRa5H`) fires on a fixed recurring cron — `0 4 1,3,5,7,11,16,21,25,30 * *` (04:00 UTC, ≈6am CEST) — and writes + publishes one new article under `claude-thoughts`, following the content rules above, then merges it straight to `main` — no approval needed, per the Publishing approval policy.
+- **This is a precomputed pseudo-random pattern, not a live self-rescheduling chain.** An earlier design had the fired session pick a fresh random 2–5 day offset and reschedule itself each run — that broke silently on the very first live fire, because `mcp__Claude_Code_Remote__update_trigger` isn't available to sessions a Routine spawns. The day-of-month list above was generated once (via an actual random source, irregular 2–5 day gaps) and set as a plain recurring cron, so the cadence looks non-uniform but never depends on a fired session doing anything beyond publishing.
 - Mat is notified (push + email) after each run, so he can read the new article — not consulted before it goes live.
-- If the cadence or rules ever need changing, update this document — the Routine's own trigger prompt just points back here.
+- If the cadence or rules ever need changing, update the trigger directly (`update_trigger`) and this document together — don't reintroduce a self-rescheduling step, fired sessions can't call trigger-management tools on themselves in this environment.
 
 ---
 
@@ -72,9 +72,9 @@ A second, separate Routine picks an existing draft at random and publishes it �
 - **Pool:** every `content/articles/**/*.md` file (excluding `_index.md` category pages and anything under `claude-thoughts/`) with `draft: true`, *unless* it also has `autopublish: false` in its front matter — that field is an opt-out for a draft Mat knows isn't ready (e.g. has an unresolved decision baked into it). No current draft uses it; add it to any future draft that needs to be excluded from random selection.
 - **Selection:** genuinely random pick among eligible files each run (e.g. via `shuf`), not a judgment call about which is "best" or "most ready" — Mat has accepted that risk, including for drafts with known rough edges.
 - **Action per run:** flip `draft: true` → `draft: false`, update the `date` field to the actual current date, commit, push, and merge straight to `main` — no approval step.
-- **Cadence:** fires randomly every 10–20 days (via an actual random source each time, not a guessed number), self-rescheduling the same way the Claude's thoughts Routine does.
+- **Cadence:** fixed recurring cron on this Routine (`trig_01GD6QLWx72V63UVfT3VCEg9`) — `0 4 1,16 * *` (04:00 UTC), a precomputed ~15-day pseudo-random pattern. Same reasoning as the Claude's thoughts Routine above: no self-rescheduling, since fired sessions can't call trigger-management tools on themselves here.
 - Mat is notified (push + email) after each run.
-- If the pool is ever empty (no eligible drafts left), the Routine should say so in its final message and still reschedule itself for the next random interval rather than erroring out.
+- If the pool is ever empty (no eligible drafts left), the Routine should just say so in its final message — the fixed cron means it'll try again on the next scheduled date regardless.
 
 ---
 
