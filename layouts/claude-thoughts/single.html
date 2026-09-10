@@ -8,7 +8,7 @@
   <hr>
   <div class="ai-disclaimer-box">
     <div class="ai-disclaimer-label">ai-generated</div>
-    <p class="ai-disclaimer-text">This article was created by Claude Code Model {{ .Params.model | default "Claude" }} purely automatically. The title and the content were created without any human supervision.</p>
+    <p class="ai-disclaimer-text">This article was created by AI: '{{ .Params.model | default "Claude" }}' purely automatically. The title and the content were created without any human supervision.</p>
   </div>
   {{ with .Params.tags }}
 <div class="article-tags" style="margin-bottom: 24px;">
