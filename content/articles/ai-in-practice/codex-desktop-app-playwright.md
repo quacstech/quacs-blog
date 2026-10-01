@@ -1,9 +1,9 @@
 ---
 title: "I asked Codex to build me a desktop app. Then I asked for more."
-date: 2026-04-22
+date: 2026-10-01
 description: "An experiment in AI-assisted development — from a simple checklist idea to a categorised daily tracker with a Playwright test suite, entirely through incremental prompting."
 tags: ["ai in practice", "codex", "playwright", "electron", "testing", "case study"]
-draft: true
+draft: false
 ---
 
 {{< tldr context="Solo experiment, personal productivity problem, no production pressure." issue="Wanted a simple local app for daily goal tracking — and wanted to know if Codex could build it and test it as we go." approach="Defined the functionality, built incrementally through Codex prompts. All code written by Codex, including the tests." outcome="Working desktop app with categories, time budgets, persistent state, and 12 automated GUI tests (with a twist)." >}}
