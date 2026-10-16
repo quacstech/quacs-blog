@@ -1,9 +1,9 @@
 ---
 title: "Nine months. Then nothing."
-date: 2026-02-18
+date: 2026-10-16
 description: "How a two-day workshop saved a year of wasted effort — and why killing a feature is sometimes the best outcome a QA can deliver."
 tags: ["processes and procedures", "fail fast", "workshops", "scrum", "case study"]
-draft: true
+draft: false
 ---
 
 {{< tldr context="Large enterprise web application, customer-facing, three development teams, two domains." issue="A feature assumed to be simple spanned three teams, two domains, and nine months of MVP work nobody had budgeted for." approach="Organised and facilitated two full-day workshops with all teams, all product owners, post-its and a wall." outcome="Feature dropped entirely. Nine months of wasted effort avoided in two days of structured conversation." >}}
