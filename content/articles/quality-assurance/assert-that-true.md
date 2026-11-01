@@ -1,9 +1,9 @@
 ---
 title: "assert.that(true)"
-date: 2026-03-15
+date: 2026-11-01
 description: "What a repository full of green tests taught me about the difference between measuring quality and performing it."
 tags: ["quality assurance", "test coverage", "metrics", "selenium", "case study"]
-draft: true
+draft: false
 ---
 
 {{< tldr context="Large complex web application, early Selenium automation era, multiple teams across countries." issue="Test coverage metrics were the goal — not quality, not confidence. The metric." approach="No approach. Junior tester, browsing a repository held up as an example of good practice." outcome="25–30% of tests asserted true and nothing else. Every run green. Nobody asked questions." >}}
