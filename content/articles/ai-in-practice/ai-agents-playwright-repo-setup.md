@@ -3,7 +3,7 @@ title: "One rulebook for every AI agent: setting up a Playwright repo for Claude
 date: 2026-11-25
 description: "A setup prompt, a manual step-by-step guide and a daily usage guide for making every AI agent and team member write Playwright tests the same way."
 tags: ["ai in practice", "playwright", "claude code", "codex", "test automation", "agents"]
-draft: true
+draft: false
 ---
 
 ## Part 1: Setup prompt
